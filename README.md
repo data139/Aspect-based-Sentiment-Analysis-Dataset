@@ -4,11 +4,13 @@ The purpose of this labelled dataset for aspect-based sentiment analysis is to d
 
 In a given review, the basic task is to identify the explicit aspect terms that are clearly mention in the text, the sentiment containing words/phrases and sentiment polarity of the aspect term, and also the sentiment polarity of each review is also mentioned.
 
+
 Review 1: I love the food and atmosphere, but staff was incompetent
 
 Review 2: The fries with mayo are not tasty
 
 Review 3: My friend took me there for thai food
+
 
 Aspect Term: An aspect term can be single word or multi words.  In review 1, the aspect terms are “food”, “atmosphere” and “staff”. In review 2, the only aspect term is “fries with mayo”. And in review 3, “thai food” is the aspect term.
 
@@ -21,18 +23,30 @@ Review Sentiment Polarity: Each review has assigned one of the following polarit
 The information about aspect terms, aspect/review sentiment polarities and sentiment-containing word/phrases has been labelled in the dataset using the following syntax:
 
 Review ID [review sentiment polarity]
+
 Review Text
+
 [aspect term, sentiment-containing word/phrase aspect term sentiment polarity] , ….
 
 
+
 1
+
 I love the food and atmosphere, but staff was incompetent  [+1]
+
 [food, love +1], [atmosphere, love +1], [staff, incompetent -1] 
 
+
+
 2
+
 The fries with mayo are not tasty  [-1]
+
 [fries with mayo, not tasty -1]
 
+
 3
+
 My friend took me there for thai food [0]
+
 [thai food, 0]
